@@ -4,6 +4,10 @@
 int main(){
   int i,h=0,t=0,A[5];
   unsigned int seed;
+  char a[100];
+  printf("Who are you?\n");
+  scanf("%s",a);
+  printf("Hello,%s\n",a);
   printf("Tossing a coins\n");
     seed = (unsigned int)time(NULL);
     srand(seed);
@@ -19,7 +23,7 @@ int main(){
     }
   }
     printf("Heads %d Tails %d\n",h,t);
-  if(h >t )printf("You won\n");
-  else printf("You lost\n");
+    if(h >t )printf("%s won!\n",a);
+  else printf("%s lost\n",a);
   return 0;
 }
